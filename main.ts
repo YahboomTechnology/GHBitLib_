@@ -282,20 +282,20 @@ namespace GHBit {
             now_state = enRocker.Up;
 
         }
-        else if (x > 900) //下 900 -> 730
+        else if (x > 900) //左 900 -> 730
         {
 
-            now_state = enRocker.Down;
+            now_state = enRocker.Left;
         }
-        else  // 左右
+        else
         {
             if (y < 200) //右
             {
                 now_state = enRocker.Right;
             }
-            else if (y > 900) //左 900 -> 730
+            else if (y > 900) //下 900 -> 730
             {
-                now_state = enRocker.Left;
+                now_state = enRocker.Down;
             }
         }
         if (z == 0)
